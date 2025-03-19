@@ -18,6 +18,8 @@ services:
       - postgres
     networks:
       - app_network
+    environment:
+      DB_URL: 'postgresql+asyncpg://philing:postgres_password@postgres:5432'
 
 networks:
   app_network:
