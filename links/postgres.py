@@ -8,9 +8,10 @@ from string import ascii_letters, digits
 from random import choices
 import asyncio
 import nest_asyncio
+import os
 nest_asyncio.apply()
 
-DATABASE_URL = "postgresql+asyncpg://philing:postgres_password@postgres:5432"
+DATABASE_URL = os.environ['HOME']
 
 engine = create_async_engine(DATABASE_URL, echo=True, poolclass=NullPool)
 
