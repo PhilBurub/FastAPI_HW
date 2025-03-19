@@ -11,7 +11,7 @@ import nest_asyncio
 import os
 nest_asyncio.apply()
 
-DATABASE_URL = os.environ['HOME']
+DATABASE_URL = os.environ['DB_URL']
 
 engine = create_async_engine(DATABASE_URL, echo=True, poolclass=NullPool)
 
