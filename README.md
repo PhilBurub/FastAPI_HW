@@ -34,7 +34,7 @@
   - обязательные аргументы `headers={'login': str, 'token': str}`
   - формат ответа `{'status': 'SUCCESS'}`
 ## Примеры запросов
-Можно найти в файле [test.ipynb][test.ipynb]
+Можно найти в файле [test.ipynb](test.ipynb)
 ## Инструкция по запуску
 Для локального запуска необходимо внутри репозитория прописать `docker compose -f ./docker-compose.yml -p fastapi-hw up -d`
 ## Описание бд
